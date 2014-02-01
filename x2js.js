@@ -81,7 +81,7 @@ x2js = {
       for (var tagName in entries) {
         var entry = entries[tagName];
 
-        if (Object.prototype.toString.call(entry) === '[object Array]' && entry.length === 1) {
+        if (entry.length === 1) {
           entries[tagName] = entry[0];
         }
       }
